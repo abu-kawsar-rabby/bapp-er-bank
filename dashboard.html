@@ -10,20 +10,20 @@
 
 </head>
 
-<body class="bg-blue-100 text-blue-700 md:w-9/12 mx-auto">
-    <header>
-        <h1 class="text-5xl font-semibold text-center mt-4">Need SOME MOooooooooooNey</h1>
+<body class="bg-blue-100 text-blue-700 md:w-9/12 mx-auto  border-red-900 border-double border-x-2 rounded-md">
+    <header class="bg-red-900 mb-5 text-center text-white p-5 rounded">
+        <h1 class="text-5xl font-semibold text-center mb-4">Need SOME MOooooooooooNey</h1>
     </header>
     <main>
         <div class="grid md:grid-cols-3 gap-5 w-3/4 mx-auto my-10 text-white">
             <div class="bg-green-500 p-8 rounded-xl">
                 <h2 class="font-bold text-2xl">Deposit</h2>
-                <h1 class="text-4xl font-extrabold">$<span id="deposit-total">00</span>
+                <h1 class="text-4xl font-extrabold">$<span id="total-deposit">00</span>
                 </h1>
             </div>
             <div class="bg-red-500 p-8 rounded-xl">
                 <h2 class="font-bold text-2xl">Withdraw</h2>
-                <h1 class="text-4xl font-extrabold">$<span id="withdraw-total">00</span></h1>
+                <h1 class="text-4xl font-extrabold">$<span id="total-withdraw">00</span></h1>
             </div>
             <div class="bg-blue-500 p-8 rounded-xl">
                 <h2 class="font-bold text-2xl">Balance</h2>
@@ -34,25 +34,25 @@
             <div class="bg-green-600 px-5 py-7 rounded-lg">
                 <h1 class="font-semibold text-2xl">Enter Deposit amount :</h1>
                 <input type="text" name="" id="deposit-input" placeholder="$amount you want to deposit"
-                    class="block pl-2 pr-36 py-2 my-2 rounded text-black">
+                    class="block pl-2 py-2 my-2 rounded text-black">
                 <button class="bg-red-600 hover:bg-red-900 py-3 px-7 rounded-lg text-white font-semibold"
-                    id="deposit-btn">Confirm
+                    id="btn-deposit">Confirm
                 </button>
             </div>
             <div class="bg-orange-600 px-4 py-7 rounded-lg">
                 <h1 class="font-semibold text-2xl">Enter Withdraw amount :</h1>
-                <input type="number" name="" id="withdraw-input" placeholder="$amount you want to withdraw"
+                <input type="text" name="" id="withdraw-input" placeholder="$amount you want to withdraw"
                     class="block pl-2 mr-10 py-2 my-2 rounded text-black">
                 <button class="bg-red-800 hover:bg-red-900 py-3 px-7 rounded-lg text-white font-semibold"
-                    id="withdraw-btn">Confirm
+                    id="btn-withdraw">Confirm
                 </button>
             </div>
         </div>
     </main>
     <footer>
-<div class="bg-red-900 my-5 text-center text-white p-5">
-    <h1 class="w-1/2 mx-auto font-semibold text-xl"><a href="./index.html">logout</a></h1>
-</div>
+        <div class="bg-red-900 mt-10 text-center text-white p-1 rounded">
+            <h1 class="w-1/2 mx-auto font-semibold text-xl"><a href="./index.html">logout</a></h1>
+        </div>
     </footer>
     <script src="./js/dashboard.js"></script>
 </body>
